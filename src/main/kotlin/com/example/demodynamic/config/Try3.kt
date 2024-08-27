@@ -1,9 +1,8 @@
 package com.example.demodynamic.config
 
+import com.example.demodynamic.config.Try2.Companion.registerBeanDefinition
 import com.example.demodynamic.data.DynamicBean
-import com.example.demodynamic.data.StaticBean
 import com.example.demodynamic.properties.RootProperties
-import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.beans.factory.BeanFactory
 import org.springframework.beans.factory.BeanFactoryAware
 import org.springframework.beans.factory.config.RuntimeBeanReference
@@ -13,7 +12,6 @@ import org.springframework.beans.factory.support.BeanNameGenerator
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar
 import org.springframework.core.type.AnnotationMetadata
 import org.springframework.stereotype.Component
-import com.example.demodynamic.config.Try2.Companion.registerBeanDefinition
 
 @Component
 class Try3 : ImportBeanDefinitionRegistrar, BeanFactoryAware {
